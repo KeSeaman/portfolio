@@ -7,22 +7,22 @@
     --color-bg-secondary: #12121a;
     --color-bg-card: rgba(20, 20, 30, 0.6);
     --color-bg-card-hover: rgba(30, 30, 45, 0.8);
-    
+
     --color-text-primary: #f0f0f5;
     --color-text-secondary: #a0a0b0;
     --color-text-muted: #6b6b80;
-    
+
     --color-accent-primary: #6366f1;
     --color-accent-secondary: #8b5cf6;
     --color-accent-tertiary: #ec4899;
-    
+
     --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
     --gradient-glow: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -30,18 +30,18 @@
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-2xl: 5rem;
-    
+
     /* Border Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 20px;
     --radius-full: 9999px;
-    
+
     /* Transitions */
     --transition-fast: 0.15s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     /* Shadows */
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
     --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
@@ -50,7 +50,9 @@
 /* ============================================
    Reset & Base Styles
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -180,8 +182,15 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, -30px) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(30px, -30px) scale(1.05);
+    }
 }
 
 .hero-content {
@@ -296,8 +305,17 @@ body {
 }
 
 @keyframes scroll-bounce {
-    0%, 100% { opacity: 1; top: 8px; }
-    50% { opacity: 0.3; top: 16px; }
+
+    0%,
+    100% {
+        opacity: 1;
+        top: 8px;
+    }
+
+    50% {
+        opacity: 0.3;
+        top: 16px;
+    }
 }
 
 /* ============================================
@@ -585,12 +603,61 @@ section {
 }
 
 /* ============================================
+   Fun Activities Section
+   ============================================ */
+.fun-activities {
+    background: var(--color-bg-secondary);
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.activity-card {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--transition-normal);
+}
+
+.activity-card:hover {
+    transform: translateY(-6px);
+    background: var(--color-bg-card-hover);
+    border-color: rgba(236, 72, 153, 0.3);
+}
+
+.activity-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.activity-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* ============================================
    Footer
    ============================================ */
 .footer {
     padding: var(--spacing-lg) 0;
     text-align: center;
-    background: var(--color-bg-secondary);
+    background: var(--color-bg-primary);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -606,16 +673,16 @@ section {
     .nav-links {
         display: none;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .about-stats {
         gap: var(--spacing-sm);
     }
-    
+
     .stat {
         min-width: 100px;
         padding: var(--spacing-sm);
