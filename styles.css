@@ -603,6 +603,89 @@ section {
 }
 
 /* ============================================
+   Education Section
+   ============================================ */
+.education {
+    background: var(--color-bg-primary);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    padding: var(--spacing-lg);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    background: var(--color-bg-card-hover);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.education-card.current {
+    border-color: rgba(139, 92, 246, 0.4);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.education-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.education-card.current .education-badge {
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--color-accent-secondary);
+}
+
+.education-card:not(.current) .education-badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.education-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.education-school {
+    font-size: 0.9rem;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.education-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.education-link {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    color: var(--color-accent-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ============================================
    Fun Activities Section
    ============================================ */
 .fun-activities {
