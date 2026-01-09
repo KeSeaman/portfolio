@@ -2,28 +2,28 @@
    CSS Variables & Design Tokens
    ============================================ */
 :root {
-    /* Colors - New Light Theme */
-    --color-bg-primary: #F2F0E9;
-    /* Alabaster - Main Background */
-    --color-bg-secondary: #E8E5DC;
-    /* Slightly darker Alabaster */
-    --color-bg-card: rgba(255, 255, 255, 0.8);
-    --color-bg-card-hover: rgba(255, 255, 255, 0.95);
+    /* Colors - Refined Light Theme */
+    --color-bg-primary: #F5F5F5;
+    /* Cultured White - Main Background */
+    --color-bg-secondary: #0B2545;
+    /* Oxford Blue - Sidebar, Footer */
+    --color-bg-card: rgba(255, 255, 255, 0.9);
+    --color-bg-card-hover: rgba(255, 255, 255, 1);
 
-    --color-text-primary: #262626;
-    /* Dark Olive - Body Text */
-    --color-text-secondary: #4a4a4a;
-    --color-text-muted: #6b6b6b;
+    --color-text-primary: #13315C;
+    /* Charcoal - Body Text */
+    --color-text-secondary: #1a3a6a;
+    --color-text-muted: #4a5568;
 
-    --color-accent-primary: #2C5530;
-    /* Hunter Green - Headers, Name */
-    --color-accent-secondary: #3d7042;
-    /* Lighter Hunter Green */
-    --color-accent-tertiary: #E76F51;
-    /* Burnt Sienna - Buttons, Alerts */
+    --color-accent-primary: #0B2545;
+    /* Oxford Blue - Headers */
+    --color-accent-secondary: #13315C;
+    /* Charcoal variant */
+    --color-accent-tertiary: #C69C6D;
+    /* Antique Brass - Buttons, Links */
 
-    --gradient-primary: linear-gradient(135deg, #2C5530 0%, #3d7042 50%, #2C5530 100%);
-    --gradient-glow: radial-gradient(circle, rgba(44, 85, 48, 0.1) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, #0B2545 0%, #13315C 50%, #0B2545 100%);
+    --gradient-glow: radial-gradient(circle, rgba(11, 37, 69, 0.1) 0%, transparent 70%);
 
     /* Typography */
     --font-primary: 'Lato', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -93,9 +93,9 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(242, 240, 233, 0.9);
+    background: rgba(245, 245, 245, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(44, 85, 48, 0.1);
+    border-bottom: 1px solid rgba(11, 37, 69, 0.1);
 }
 
 .nav-container {
@@ -268,7 +268,7 @@ body {
 .btn-primary {
     background: var(--color-accent-tertiary);
     color: white;
-    box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
+    box-shadow: 0 4px 15px rgba(198, 156, 109, 0.4);
 }
 
 .btn-primary:hover {
