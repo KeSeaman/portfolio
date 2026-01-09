@@ -2,27 +2,33 @@
    CSS Variables & Design Tokens
    ============================================ */
 :root {
-    /* Colors */
-    --color-bg-primary: #0a0a0f;
-    --color-bg-secondary: #12121a;
-    --color-bg-card: rgba(20, 20, 30, 0.6);
-    --color-bg-card-hover: rgba(30, 30, 45, 0.8);
+    /* Colors - New Light Theme */
+    --color-bg-primary: #F2F0E9;
+    /* Alabaster - Main Background */
+    --color-bg-secondary: #E8E5DC;
+    /* Slightly darker Alabaster */
+    --color-bg-card: rgba(255, 255, 255, 0.8);
+    --color-bg-card-hover: rgba(255, 255, 255, 0.95);
 
-    --color-text-primary: #f0f0f5;
-    --color-text-secondary: #a0a0b0;
-    --color-text-muted: #6b6b80;
+    --color-text-primary: #262626;
+    /* Dark Olive - Body Text */
+    --color-text-secondary: #4a4a4a;
+    --color-text-muted: #6b6b6b;
 
-    --color-accent-primary: #6366f1;
-    --color-accent-secondary: #8b5cf6;
-    --color-accent-tertiary: #ec4899;
+    --color-accent-primary: #2C5530;
+    /* Hunter Green - Headers, Name */
+    --color-accent-secondary: #3d7042;
+    /* Lighter Hunter Green */
+    --color-accent-tertiary: #E76F51;
+    /* Burnt Sienna - Buttons, Alerts */
 
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-    --gradient-glow: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, #2C5530 0%, #3d7042 50%, #2C5530 100%);
+    --gradient-glow: radial-gradient(circle, rgba(44, 85, 48, 0.1) 0%, transparent 70%);
 
     /* Typography */
-    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Cinzel', Georgia, serif;
-    --font-accent: 'Fraunces', Georgia, serif;
+    --font-primary: 'Lato', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-accent: 'Lato', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
     /* Spacing */
@@ -45,8 +51,8 @@
     --transition-slow: 0.5s ease;
 
     /* Shadows */
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-glow: 0 0 40px rgba(44, 85, 48, 0.15);
 }
 
 /* ============================================
@@ -87,9 +93,9 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(242, 240, 233, 0.9);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(44, 85, 48, 0.1);
 }
 
 .nav-container {
@@ -152,7 +158,7 @@ body {
     position: absolute;
     border-radius: 50%;
     filter: blur(80px);
-    opacity: 0.5;
+    opacity: 0.25;
     animation: float 8s ease-in-out infinite;
 }
 
@@ -260,9 +266,9 @@ body {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--color-accent-tertiary);
     color: white;
-    box-shadow: var(--shadow-glow);
+    box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
 }
 
 .btn-primary:hover {
