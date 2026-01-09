@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kinyua Seaman - Data Science Portfolio showcasing ML, Causal Inference, and AI projects">
+    <title>Kinyua Seaman | Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">KS</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Kinyua Seaman</h1>
+            <p class="hero-tagline">Data Scientist & ML Engineer</p>
+            <p class="hero-description">Building intelligent systems with Rust, Python, and a passion for causal reasoning.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I specialize in building high-performance, production-ready AI systems using a polyglot approach—combining Rust's safety and speed with Python's rich ML ecosystem.</p>
+                    <p>My work spans <strong>Causal Inference</strong>, <strong>Reinforcement Learning</strong>, <strong>RAG Systems</strong>, and <strong>MLOps</strong>, with a focus on explainability and real-world impact.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Major Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Rust</span>
+                            <span class="stat-label">+ Python</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">PyO3</span>
+                            <span class="stat-label">Polyglot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Climate Policy RAG -->
+                <article class="project-card">
+                    <div class="project-icon">🌍</div>
+                    <h3 class="project-title">Climate Policy RAG</h3>
+                    <p class="project-description">Production-ready Multi-Agent RAG system for climate intelligence. Synthesizes insights from IPCC, UNFCCC, and scientific literature.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyO3</span>
+                        <span class="tech-tag">SIMD</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>Rust-backed SIMD vector search</li>
+                        <li>Live ArXiv & World Bank ingestion</li>
+                        <li>Functional multi-agent orchestration</li>
+                    </ul>
+                    <a href="https://github.com/KeSeaman/ClimatePolicyRAG" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Deep Causality -->
+                <article class="project-card">
+                    <div class="project-icon">🔬</div>
+                    <h3 class="project-title">Deep Causality</h3>
+                    <p class="project-description">ICU Sepsis early detection using causal reasoning. A safety engine that asks "Why?" before "What?"</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">DeepCausality</span>
+                        <span class="tech-tag">Marimo</span>
+                        <span class="tech-tag">SURD</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>mRMR & SURD causal discovery</li>
+                        <li>Effect Ethos AI safety guardrails</li>
+                        <li>Counterfactual explanations</li>
+                    </ul>
+                    <a href="https://github.com/KeSeaman/Deep_Causality" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- F1 MLOps -->
+                <article class="project-card">
+                    <div class="project-icon">🏎️</div>
+                    <h3 class="project-title">F1 MLOps</h3>
+                    <p class="project-description">Multi-Agent Reinforcement Learning for F1 race strategy optimization with real 2024 Bahrain GP data.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">Ray RLlib</span>
+                        <span class="tech-tag">Feast</span>
+                        <span class="tech-tag">Marimo</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>PPO agent for pit strategy</li>
+                        <li>Rust simulation engine</li>
+                        <li>Real FastF1 telemetry data</li>
+                    </ul>
+                    <a href="https://github.com/KeSeaman/F1_MLOps" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Causal Inference -->
+                <article class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Causal Inference</h3>
+                    <p class="project-description">High-performance causal methods library. OLS, IV/2SLS, DiD, and Causal Forests with ~10x Rust speedup.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">EconML</span>
+                        <span class="tech-tag">Polars</span>
+                        <span class="tech-tag">PyO3</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>NBER NSW dataset analysis</li>
+                        <li>GPU-accelerated Causal Forests</li>
+                        <li>Mediation analysis</li>
+                    </ul>
+                    <a href="https://github.com/KeSeaman/causal_project_v2" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>ML & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Ray RLlib</span>
+                        <span class="skill-tag">EconML</span>
+                        <span class="skill-tag">scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & MLOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Polars</span>
+                        <span class="skill-tag">Feast</span>
+                        <span class="skill-tag">Marimo</span>
+                        <span class="skill-tag">FastF1</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyO3</span>
+                        <span class="skill-tag">Maturin</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-intro">Interested in collaborating or discussing opportunities? Let's connect!</p>
+            <div class="contact-links">
+                <a href="mailto:k.mseaman09@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">k.mseaman09@gmail.com</span>
+                </a>
+                <a href="https://github.com/KeSeaman" class="contact-card" target="_blank">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">@KeSeaman</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kinyua-seaman/" class="contact-card" target="_blank">
+                    <span class="contact-icon">🔗</span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">kinyua-seaman</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Kinyua Seaman. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
