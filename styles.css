@@ -557,10 +557,12 @@ section {
     font-size: 0.85rem;
     padding: 6px 14px;
     background: rgba(198, 156, 109, 0.15);
-    color: #C69C6D;
+    /* Light Antique Brass background */
+    color: #8C6A46;
+    /* Darker Antique Brass for better readability */
     border-radius: var(--radius-full);
-    border: 1px solid rgba(198, 156, 109, 0.3);
-    font-weight: 500;
+    border: 1px solid rgba(198, 156, 109, 0.4);
+    font-weight: 600;
 }
 
 /* ============================================
